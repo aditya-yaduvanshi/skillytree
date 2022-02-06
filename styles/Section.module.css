@@ -1,0 +1,96 @@
+.section {
+  @apply flex items-center justify-start;
+  @apply h-full relative;
+  scroll-snap-align: start;
+}
+.section_col {
+  @apply w-1/2 h-full;
+  @apply flex items-start flex-col justify-center;
+}
+.section_text {
+  @apply w-full h-full;
+  @apply flex flex-col items-start justify-center;
+  @apply pl-12 relative;
+}
+.section_title {
+  @apply text-7xl font-bold;
+}
+.section_title_highlight {
+  @apply text-red-500;
+}
+.section_para {
+  @apply my-4;
+  @apply font-semibold text-slate-700;
+}
+.section_btn {
+  @apply bg-gradient-to-r from-red-400 to-orange-400;
+  @apply text-white font-bold;
+  @apply flex items-center justify-between;
+  @apply px-8 py-3;
+  @apply rounded-bl-full rounded-tr-full;
+}
+.section_btn span {
+  @apply mx-3;
+}
+.section_btn_dots {
+  @apply absolute bottom-10;
+  @apply flex flex-row justify-start items-center;
+}
+.section_dot {
+  @apply mr-2 w-3.5 h-3.5;
+  @apply bg-gray-300;
+  @apply rounded-full;
+}
+.section_dot_active {
+  @apply bg-red-400;
+}
+.graphics_wrapper {
+  @apply flex justify-center items-end;
+  @apply -z-10;
+}
+.graphics_img {
+  @apply absolute -bottom-1.5 right-0;
+  @apply w-3/5;
+}
+.graphics_btn {
+  @apply absolute;
+  @apply cursor-pointer;
+  @apply z-10 py-1 px-3;
+  @apply text-sm font-bold text-red-500;
+  @apply flex items-center justify-center;
+  background-image: linear-gradient(to right rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  box-shadow: -4px -4px 11px rgba(95, 95, 95, 0.25), 4px 4px 7px rgba(62, 62, 62, 0.17);
+}
+.graphics_btn_title {
+
+}
+.graphics_btn_student {
+  @apply top-2/3 right-1/3;
+  @apply rounded-full;
+}
+.graphics_btn_enroll {
+  @apply top-16 right-1/4;
+  @apply rounded-md;
+}
+.graphics_btn_normal {
+  @apply text-xs font-normal text-slate-600;
+}
+.graphics_btn_cooking {
+  @apply bottom-6 right-24;
+  @apply rounded-md;
+}
+.graphics_btn_divider {
+  @apply flex flex-col justify-center items-start;
+  @apply px-2;
+}
+.graphics_btn_divider button {
+  @apply rounded-full px-2 py-1;
+  @apply bg-red-400 text-white text-xs;
+}
+.graphics_btn_text {
+  @apply text-white text-xs;
+}
+.graphics_btn_instructor {
+  @apply top-28 right-8;
+  @apply rounded-md;
+}

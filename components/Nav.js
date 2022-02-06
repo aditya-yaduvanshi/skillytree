@@ -11,7 +11,7 @@ export function Nav() {
 			<Link href="/">
 				<a className={styles.nav_brand}>
 					<div className={styles.nav_brand_logo}>
-						<Image src={BrandLogo} />
+						<Image src={BrandLogo} alt="" />
 					</div>
 					<div className={styles.nav_brand_text}>
 						<span className={styles.nav_brand_title}>
@@ -32,12 +32,12 @@ export function Nav() {
 					placeholder="SEARCH A SKILL"
 				/>
 				<span className={styles.nav_search_icon}>
-					<Image src={SearchIcon} />
+					<Image src={SearchIcon} alt="" />
 				</span>
 			</div>
 			<div className={styles.nav_links}>
 				<button className={`${styles.nav_link} ${styles.nav_menu_btn}`}>
-					<Image src={MenuBar} height={36} width={36} />
+					<Image src={MenuBar} height={36} width={36} alt="" />
 				</button>
 				<Link href="#!">
 					<a className={styles.nav_link}>Log In</a>

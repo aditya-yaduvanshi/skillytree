@@ -1,0 +1,61 @@
+.nav {
+  @apply flex items-center flex-row justify-between;
+  @apply shadow-md bg-white;
+  @apply px-12 py-2;
+  @apply sticky top-0 left-0 right-0;
+  @apply z-10;
+}
+.nav_brand {
+  @apply flex;
+  @apply ml-5;
+}
+.nav_brand_text {
+  @apply flex flex-col items-center justify-center;
+  @apply p-2;
+}
+.nav_brand_title {
+  @apply text-3xl font-bold tracking-widest;
+}
+.nav_brand_title_text1 {
+  @apply text-red-500;
+}
+.nav_brand_title_text2 {
+  @apply text-red-900;
+}
+.nav_brand_slogan {
+  @apply text-xs text-slate-600 font-semibold tracking-widest;
+}
+.nav_search {
+  @apply border-2 border-slate-400 rounded-full;
+  @apply overflow-hidden;
+  @apply relative;
+}
+.nav_search_input {
+  @apply bg-transparent outline-none;
+  @apply py-4 w-80 px-7;
+  @apply font-semibold tracking-wider text-sm;
+} 
+.nav_search_input:-webkit-autofill,
+.nav_search_input:-webkit-autofill:hover, 
+.nav_search_input:-webkit-autofill:focus, 
+.nav_search_input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.nav_search_icon {
+  @apply absolute right-4 top-3.5;
+}
+.nav_links {
+  @apply flex items-center justify-between;
+  @apply text-xl font-semibold;
+}
+.nav_link {
+  @apply mr-3 px-7 py-2;
+  @apply rounded-full;
+}
+.nav_link_signin {
+  @apply bg-gradient-to-r from-red-400 to-orange-500;
+  @apply text-white;
+}
+.nav_menu_btn {
+  @apply pt-4;
+}

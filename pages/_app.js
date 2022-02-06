@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import {Nav} from '../components';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({Component, pageProps}) {
+	return (
+		<>
+			<Nav />
+			<main className="main">
+				<Component {...pageProps} />
+			</main>
+		</>
+	);
 }
 
-export default MyApp
+export default MyApp;

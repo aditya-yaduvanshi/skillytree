@@ -1,0 +1,18 @@
+.transition {
+  @apply relative;
+}
+.transition_article {
+  transition: all 0.3s ease-in-out;
+}
+.transition_dots {
+  @apply absolute bottom-10;
+  @apply flex flex-row justify-start items-center;
+}
+.transition_dot {
+  @apply mr-2 w-3.5 h-3.5;
+  @apply bg-gray-300;
+  @apply rounded-full outline-none;
+}
+.transition_dot_active {
+  @apply bg-red-400;
+}

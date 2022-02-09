@@ -1,0 +1,67 @@
+.content_col {
+  @apply w-1/2 h-full;
+  @apply flex items-start flex-col justify-center;
+}
+.content_text {
+  @apply w-full h-full;
+  @apply flex flex-col items-start justify-center;
+  @apply pl-12 relative;
+}
+.content_title {
+  @apply text-7xl font-bold;
+}
+.content_title_highlight {
+  @apply text-red-500;
+}
+.content_para {
+  @apply my-4;
+  @apply font-semibold text-slate-700;
+}
+.graphics_wrapper {
+  @apply flex justify-center items-end;
+  @apply -z-10;
+}
+.graphics_img {
+  @apply absolute -bottom-1.5 right-0;
+  @apply w-3/5;
+}
+.graphics_btn {
+  @apply absolute;
+  @apply cursor-pointer;
+  @apply z-20 py-1 px-3;
+  @apply text-sm font-bold text-red-500;
+  @apply flex items-center justify-center;
+  background-image: linear-gradient(to right rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  box-shadow: -4px -4px 11px rgba(95, 95, 95, 0.25), 4px 4px 7px rgba(62, 62, 62, 0.17);
+  cursor: pointer;
+}
+.graphics_btn_student {
+  @apply top-2/3 right-1/3;
+  @apply rounded-full;
+}
+.graphics_btn_enroll {
+  @apply top-16 right-1/4;
+  @apply rounded-md;
+}
+.graphics_btn_normal {
+  @apply text-xs font-normal text-slate-600;
+}
+.graphics_btn_cooking {
+  @apply bottom-6 right-24;
+  @apply rounded-md;
+}
+.graphics_btn_divider {
+  @apply flex flex-col justify-center items-start;
+  @apply px-2;
+}
+.graphics_btn_divider button {
+  @apply rounded-full px-2 py-1;
+  @apply bg-red-400 text-white text-xs;
+}
+.graphics_btn_text {
+  @apply text-white text-xs;
+}
+.graphics_btn_instructor {
+  @apply top-28 right-8;
+  @apply rounded-md;
+}

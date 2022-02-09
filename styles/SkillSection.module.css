@@ -1,0 +1,60 @@
+.section_subtitle {
+	@apply text-slate-700 text-4xl font-semibold;
+	@apply mt-12 mb-2;
+}
+.section_subtext {
+	@apply text-red-500 font-bold text-xl;
+	@apply mb-8;
+}
+.graphics {
+	@apply absolute right-0 top-0 bottom-0 left-1/2 mt-auto;
+}
+.skill_circle {
+	@apply h-3/4 rounded-full p-2;
+  @apply relative aspect-square top-1/2 left-1/2;
+  background: linear-gradient(-112.33deg, #fc4d6d 23.89%, #fda02f 94.22%);
+	opacity: 0.8;
+  transform: translate(-50%, -42.5%);
+}
+.skill_circle_inner {
+  @apply aspect-square;
+  @apply bg-white rounded-full w-full;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(71, 242, 28, 0.23) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.outer_circle {
+	@apply rounded-full absolute;
+	background: linear-gradient(112.33deg, #fc4d6d 23.89%, #fda02f 94.22%);
+	opacity: 0.8;
+	transform: rotate(62.22deg);
+	@apply aspect-square;
+}
+.outer_circle_lg {
+	@apply h-20 -top-9 -right-9;
+}
+.outer_circle_sm {
+	@apply h-8 -bottom-9 -left-9;
+}
+.top {
+  @apply -top-20 left-1/2 -translate-x-1/2;
+}
+.top_left {
+  @apply top-1/4 left-4 -translate-x-1/2 -translate-y-1/4;
+}
+.top_right {
+  @apply top-1/4 right-4 translate-x-1/2 -translate-y-1/4;
+}
+.bottom_left {
+  @apply -bottom-2 left-12 -translate-x-1/4;
+}
+.bottom_right {
+  @apply -bottom-2 right-12 translate-x-1/4;
+}
+.center_skill {
+  @apply absolute left-1/2 top-1/2;
+  transform: translate(-25%, -20%);
+  @apply h-full w-full;
+  @apply transition-all duration-1000;
+}
+.center_skill_image {
+  width: 100%;
+}

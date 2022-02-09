@@ -1,0 +1,21 @@
+.skill_container {
+  @apply absolute;
+}
+
+.skill {
+  @apply relative;
+	@apply rounded-full aspect-square w-32;
+	background: linear-gradient(
+		147.46deg,
+		rgba(255, 255, 255, 0.4) 30.82%,
+		rgba(255, 255, 255, 0.1) 77.94%
+	);
+	box-shadow: -4px -4px 11px rgba(95, 95, 95, 0.25),
+		4px 4px 7px rgba(62, 62, 62, 0.17);
+	backdrop-filter: blur(20px);
+}
+
+.image {
+  @apply absolute left-1/2 -translate-x-1/2 bottom-5;
+  width: 100%;
+}

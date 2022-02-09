@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Nav.module.css';
-import BrandLogo from '../assets/img/brand-logo.svg';
+import BrandLogo from '../assets/img/brand.svg';
 import MenuBar from '../assets/img/bar-chart.svg';
 import SearchIcon from '../assets/img/search.svg';
 
@@ -10,18 +10,7 @@ export function Nav() {
 		<nav className={styles.nav}>
 			<Link href="/">
 				<a className={styles.nav_brand}>
-					<div className={styles.nav_brand_logo}>
-						<Image src={BrandLogo} alt="" />
-					</div>
-					<div className={styles.nav_brand_text}>
-						<span className={styles.nav_brand_title}>
-							<span className={styles.nav_brand_title_text1}>SKILLY</span>
-							<span className={styles.nav_brand_title_text2}>TREE</span>
-						</span>
-						<span className={styles.nav_brand_slogan}>
-							Upskill With A Personal Touch
-						</span>
-					</div>
+					<Image src={BrandLogo} alt="" />
 				</a>
 			</Link>
 			<div className={styles.nav_search}>

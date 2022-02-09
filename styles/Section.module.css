@@ -4,8 +4,9 @@
   scroll-snap-align: start;
 }
 .section_col {
-  @apply w-1/2 h-full;
+  @apply w-1/2 h-full mt-auto;
   @apply flex items-start flex-col justify-center;
+  @apply relative;
 }
 .section_text {
   @apply w-full h-full;
@@ -20,33 +21,11 @@
 }
 .section_para {
   @apply my-4;
-  @apply font-semibold text-slate-700;
-}
-.section_btn {
-  @apply bg-gradient-to-r from-red-400 to-orange-400;
-  @apply text-white font-bold;
-  @apply flex items-center justify-between;
-  @apply px-8 py-3;
-  @apply rounded-bl-full rounded-tr-full;
-}
-.section_btn span {
-  @apply mx-3;
-}
-.section_btn_dots {
-  @apply absolute bottom-10;
-  @apply flex flex-row justify-start items-center;
-}
-.section_dot {
-  @apply mr-2 w-3.5 h-3.5;
-  @apply bg-gray-300;
-  @apply rounded-full;
-}
-.section_dot_active {
-  @apply bg-red-400;
+  @apply font-semibold text-slate-900;
 }
 .graphics_wrapper {
   @apply flex justify-center items-end;
-  @apply -z-10;
+  @apply -z-10 mt-auto;
 }
 .graphics_img {
   @apply absolute -bottom-1.5 right-0;
@@ -55,14 +34,12 @@
 .graphics_btn {
   @apply absolute;
   @apply cursor-pointer;
-  @apply z-10 py-1 px-3;
+  @apply z-20 py-1 px-3;
   @apply text-sm font-bold text-red-500;
   @apply flex items-center justify-center;
   background-image: linear-gradient(to right rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
   box-shadow: -4px -4px 11px rgba(95, 95, 95, 0.25), 4px 4px 7px rgba(62, 62, 62, 0.17);
-}
-.graphics_btn_title {
-
+  cursor: pointer;
 }
 .graphics_btn_student {
   @apply top-2/3 right-1/3;

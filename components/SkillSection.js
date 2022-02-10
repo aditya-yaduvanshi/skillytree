@@ -3,11 +3,11 @@ import {useState} from 'react';
 import skillStyles from '../styles/SkillSection.module.css';
 import styles from '../styles/Section.module.css';
 import {SkillImage, ButtonLink} from '.';
-import Gardening from '../assets/img/plant.svg';
-import Yoga from '../assets/img/yoga-girl.svg';
-import Cooking from '../assets/img/girl-cooking.svg';
-import Guitar from '../assets/img/guitar.svg';
-import Eating from '../assets/img/girl-eating-salad.svg';
+import Gardening from '../public/plant.svg';
+import Yoga from '../public/yoga-girl.svg';
+import Cooking from '../public/girl-cooking.svg';
+import Guitar from '../public/guitar.svg';
+import Eating from '../public/girl-eating-salad.svg';
 
 export function SkillSection() {
 	const skills = [

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import RightArrow from '../assets/img/arrow-right.svg';
+import RightArrow from '../public/arrow-right.svg';
 import styles from '../styles/Button.module.css';
 
 export function ButtonLink({text}) {

@@ -16,6 +16,8 @@
 }
 
 .image {
-  @apply absolute left-1/2 -translate-x-1/2 bottom-5;
-  @apply w-full;
+	
+}
+.shadow {
+	@apply h-5 bg-slate-400 w-2/3 m-auto -mb-5;
 }

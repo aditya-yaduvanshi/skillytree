@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Section.module.css';
 import {ButtonLink} from '.';
-import GirlPointingItems from '../assets/img/girl-pointing-items.svg';
-import User from '../assets/img/user.svg';
-import Mail from '../assets/img/mail.svg';
-import Ellipse from '../assets/img/ellipse.svg';
-import UserGroup from '../assets/img/user-group.svg';
+import GirlPointingItems from '../public/girl-pointing-items.svg';
+import User from '../public/user.svg';
+import Mail from '../public/mail.svg';
+import Ellipse from '../public/ellipse.svg';
+import UserGroup from '../public/user-group.svg';
 
 export function StartSection() {
 	return (

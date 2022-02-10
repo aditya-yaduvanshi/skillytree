@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Nav.module.css';
-import BrandLogo from '../assets/img/brand.svg';
-import MenuBar from '../assets/img/bar-chart.svg';
-import SearchIcon from '../assets/img/search.svg';
+import BrandLogo from '../public/brand.svg';
+import MenuBar from '../public/bar-chart.svg';
+import SearchIcon from '../public/search.svg';
 
 export function Nav() {
 	return (

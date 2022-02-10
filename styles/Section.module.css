@@ -23,6 +23,9 @@
   @apply my-4;
   @apply font-semibold text-slate-900;
 }
+.image {
+  @apply absolute top-0 left-1/2 -translate-x-1/2 -translate-y-0 w-3/4;
+}
 .graphics_wrapper {
   @apply flex justify-center items-end;
   @apply -z-10 mt-auto;

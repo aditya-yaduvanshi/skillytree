@@ -9,7 +9,7 @@ export function SkillImage({src, alt, onHover, className}) {
 		<div className={`${styles.skill_container} ${className}`} onMouseOver={handleMouseOver}>
 			<div className={styles.skill}>
 				<div className={styles.image}>
-					<Image src={src} alt={alt} />
+					<Image src={src} alt={alt} layout="fill" objectFit="contain" />
 				</div>
 				<div className={styles.shadow}></div>
 			</div>

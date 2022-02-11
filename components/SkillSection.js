@@ -3,11 +3,11 @@ import {useState} from 'react';
 import skillStyles from '../styles/SkillSection.module.css';
 import styles from '../styles/Section.module.css';
 import {SkillImage, ButtonLink} from '.';
-import Gardening from '../public/plant.svg';
-import Yoga from '../public/yoga-girl.svg';
-import Cooking from '../public/girl-cooking.svg';
-import Guitar from '../public/guitar.svg';
-import Eating from '../public/girl-eating-salad.svg';
+import Gardening from '../public/img/plant.svg';
+import Yoga from '../public/img/yoga-girl.svg';
+import Cooking from '../public/img/girl-cooking.svg';
+import Guitar from '../public/img/guitar.svg';
+import Eating from '../public/img/girl-eating-salad.svg';
 
 export function SkillSection() {
 	const skills = [
@@ -86,8 +86,12 @@ export function SkillSection() {
 					></div>
 					<div className={skillStyles.skill_circle_inner}>
 						<div className={skillStyles.center_skill}>
-							<span className={skillStyles.center_skill_image}>
-								<Image src={skill.src} alt={skill.alt} />
+							<span className={skillStyles.center_skill_container}>
+								<Image
+									className={skillStyles.center_skill_img}
+									src={skill.src}
+									alt={skill.alt}
+								/>
 							</span>
 						</div>
 						{skills.map((sk) => (

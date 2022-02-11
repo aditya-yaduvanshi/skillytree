@@ -1,0 +1,34 @@
+.sidebar {
+  flex: 1;
+  @apply flex flex-col rounded-xl h-full bg-white items-center justify-start;
+  @apply p-6;
+}
+.sidebar_header {
+  @apply h-1/6 w-full text-center;
+}
+.sidebar_header_title {
+  @apply text-xl font-bold tracking-wide font-poppins;
+  background: -webkit-linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sidebar_links {
+  @apply flex flex-col items-baseline w-full;
+}
+.sidebar_link {
+  @apply w-full my-1 px-7 py-4 flex items-center justify-start;
+  @apply text-black font-roboto font-bold text-sm;
+  @apply rounded-2xl transition-all duration-200 border border-transparent hover:border-secondary;
+}
+.sidebar_link_active {
+  @apply bg-secondary text-white;
+}
+.sidebar_link_active .sidebar_link_icon {
+  @apply text-white;
+}
+.sidebar_link_icon {
+  @apply h-4 mr-2;
+}
+.sidebar_footer {
+  @apply justify-self-end;
+}

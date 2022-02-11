@@ -6,10 +6,19 @@ export function SkillImage({src, alt, onHover, className}) {
 		onHover(alt);
 	}
 	return (
-		<div className={`${styles.skill_container} ${className}`} onMouseOver={handleMouseOver}>
+		<div
+			className={`${styles.skill_container} ${className}`}
+			onMouseOver={handleMouseOver}
+		>
 			<div className={styles.skill}>
-				<div className={styles.image}>
-					<Image src={src} alt={alt} layout="fill" objectFit="contain" />
+				<div className={styles.image_container}>
+					<Image
+						className={styles.images}
+						src={src}
+						alt={alt}
+						layout="fill"
+						objectFit="contain"
+					/>
 				</div>
 				<div className={styles.shadow}></div>
 			</div>

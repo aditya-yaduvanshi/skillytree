@@ -1,0 +1,6 @@
+.container {
+  @apply bg-color-primary;
+}
+.title {
+  @apply text-2xl font-semibold;
+}

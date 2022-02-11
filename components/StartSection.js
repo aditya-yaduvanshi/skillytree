@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Section.module.css';
 import {ButtonLink} from '.';
-import GirlPointingItems from '../public/girl-pointing-items.svg';
-import User from '../public/user.svg';
-import Mail from '../public/mail.svg';
-import Ellipse from '../public/ellipse.svg';
-import UserGroup from '../public/user-group.svg';
+import GirlPointingItems from '../public/img/girl-pointing-items.svg';
+import User from '../public/img/user.svg';
+import Mail from '../public/img/mail.svg';
+import Ellipse from '../public/img/ellipse.svg';
+import UserGroup from '../public/img/user-group.svg';
 
 export function StartSection() {
 	return (
@@ -32,15 +32,15 @@ export function StartSection() {
 						className={`${styles.graphics_btn} ${styles.graphics_btn_student}`}
 					>
 						<span className={styles.graphics_btn_divider}>100K+ Students</span>
-						<span>
-							<Image src={User} alt="" />
+						<span className={styles.graphics_btn_icon}>
+							<Image className={styles.graphics_btn_img} src={User} alt="" />
 						</span>
 					</a>
 				</Link>
 				<Link href="#!">
 					<a className={`${styles.graphics_btn} ${styles.graphics_btn_enroll}`}>
-						<span>
-							<Image src={Mail} alt="" />
+						<span className={styles.graphics_btn_icon}>
+							<Image className={styles.graphics_btn_img} src={Mail} alt="" />
 						</span>
 						<span className={styles.graphics_btn_divider}>
 							<span>Congrates!</span>
@@ -54,8 +54,8 @@ export function StartSection() {
 					<a
 						className={`${styles.graphics_btn} ${styles.graphics_btn_instructor}`}
 					>
-						<span>
-							<Image src={UserGroup} alt="" />
+						<span className={styles.graphics_btn_icon}>
+							<Image className={styles.graphics_btn_img} src={UserGroup} alt="" />
 						</span>
 						<span className={styles.graphics_btn_divider}>
 							100K+ Instructors
@@ -66,8 +66,8 @@ export function StartSection() {
 					<a
 						className={`${styles.graphics_btn} ${styles.graphics_btn_cooking}`}
 					>
-						<span>
-							<Image src={Ellipse} alt="" />
+						<span className={styles.graphics_btn_icon}>
+							<Image className={styles.graphics_btn_img} src={Ellipse} alt="" />
 						</span>
 						<span className={styles.graphics_btn_divider}>
 							<span>COOKING CLASSES</span>
@@ -78,8 +78,8 @@ export function StartSection() {
 						</span>
 					</a>
 				</Link>
-				<div className={styles.graphics_img}>
-					<Image src={GirlPointingItems} alt="" />
+				<div className={styles.graphics_img_container}>
+					<Image className={styles.graphics_img} src={GirlPointingItems} alt="" />
 				</div>
 			</div>
 		</section>

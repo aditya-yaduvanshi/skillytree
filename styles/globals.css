@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "montserrat";
+  src: url("/font/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/font/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("/font/Poppins/Poppins-Regular.ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply min-h-screen;
+  @apply min-h-screen text-xs sm:text-sm md:text-base w-screen overflow-hidden;
+  @apply font-montserrat;
 }
 
 a {
@@ -21,7 +35,16 @@ a {
 }
 
 .main {
-  @apply flex items-center justify-center flex-1 flex-col;
+  @apply flex items-center justify-between flex-col md:flex-row;
   height: calc(100vh - 84px);
   @apply overflow-hidden;
+}
+.main_content {
+  flex: 5;
+  @apply h-full;
+}
+.text-primary {
+  background: -webkit-linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -1,38 +1,21 @@
 .nav {
   @apply flex items-center flex-row justify-between;
   @apply shadow-md bg-white;
-  @apply px-12 py-2;
+  @apply px-3 md:px-12 py-2;
   @apply sticky top-0 left-0 right-0;
   @apply z-10;
 }
 .nav_brand {
-  @apply flex;
-  @apply ml-5;
-}
-.nav_brand_text {
-  @apply flex flex-col items-center justify-center;
-  @apply p-2;
-}
-.nav_brand_title {
-  @apply text-3xl font-bold tracking-widest;
-}
-.nav_brand_title_text1 {
-  @apply text-red-500;
-}
-.nav_brand_title_text2 {
-  @apply text-red-900;
-}
-.nav_brand_slogan {
-  @apply text-xs text-slate-600 font-semibold tracking-widest;
+  @apply absolute left-1/2 -translate-x-1/2 md:static md:ml-28;
 }
 .nav_search {
-  @apply border-2 border-slate-400 rounded-full;
+  @apply border-2 border-slate-400 rounded-full hidden lg:block;
   @apply overflow-hidden;
   @apply relative;
 }
 .nav_search_input {
   @apply bg-transparent outline-none;
-  @apply py-4 w-80 px-7;
+  @apply py-4 w-auto lg:w-72 xl:w-80 px-7;
   @apply font-semibold tracking-wider text-sm;
 } 
 .nav_search_input:-webkit-autofill,
@@ -45,17 +28,20 @@
   @apply absolute right-4 top-3.5;
 }
 .nav_links {
-  @apply flex items-center justify-between;
+  @apply w-full md:w-auto flex items-center justify-between;
   @apply text-xl font-semibold;
 }
 .nav_link {
-  @apply mr-3 px-7 py-2;
+  @apply mr-3 px-4 py-2 sm:py-1 md:py-2;
   @apply rounded-full;
 }
 .nav_link_signin {
-  @apply bg-gradient-to-r from-red-400 to-orange-500;
+  background: linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%);
   @apply text-white;
 }
+.nav_link_login {
+  @apply hidden md:inline-block;
+}
 .nav_menu_btn {
-  @apply pt-4;
+  @apply flex justify-center items-center;
 }

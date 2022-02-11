@@ -5,12 +5,14 @@
 }
 .section_col {
   @apply w-1/2 h-full mt-auto;
-  @apply flex items-start flex-col justify-center;
+  @apply items-center justify-start;
+  @apply flex lg:items-start flex-col lg:justify-center;
   @apply relative;
 }
 .section_text {
   @apply w-full h-full;
-  @apply flex flex-col items-start justify-center;
+  @apply items-center justify-start;
+  @apply flex flex-col lg:items-start lg:justify-center;
   @apply pl-12 relative;
 }
 .section_title {
@@ -23,7 +25,7 @@
   @apply my-4;
   @apply font-semibold text-slate-900;
 }
-.image {
+.image_container {
   @apply absolute top-0 left-1/2 -translate-x-1/2 -translate-y-0 w-3/4;
 }
 .graphics_wrapper {

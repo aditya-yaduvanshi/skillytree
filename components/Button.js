@@ -15,3 +15,8 @@ export function ButtonLink({text}) {
 		</Link>
 	);
 }
+
+export function Button({children, onClick, type}) {
+	return <button className={`${styles.btn} ${styles["btn_"+type]}`} onClick={onClick}>{children}</button>;
+}
+

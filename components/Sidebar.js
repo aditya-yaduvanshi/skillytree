@@ -7,15 +7,26 @@ import {
 	CogIcon,
 	ChatIcon,
 	LogoutIcon,
+	MenuIcon
 } from '@heroicons/react/outline';
+import { useState } from 'react';
 
 export function Sidebar() {
+	const [show, setShow] = useState(false);
+
+	function toggleMenu () {
+		setShow(prev => !prev);
+	}
+	
 	return (
 		<nav className={styles.sidebar}>
 			<div className={styles.sidebar_header}>
 				<h2 className={styles.sidebar_header_title}>Dashboard</h2>
+				<button className={styles.sidebar_menu_toggle} onClick={toggleMenu}>
+					<MenuIcon className={styles.sidebar_menu_icon} />
+				</button>
 			</div>
-			<div className={styles.sidebar_links}>
+			<div className={`${styles.sidebar_links} ${show ? styles.sidebar_links_show : styles.sidebar_links_hide}`}>
 				<NavLink
 					to="/dashboard"
 					className={styles.sidebar_link}

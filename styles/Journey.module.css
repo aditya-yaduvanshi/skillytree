@@ -1,0 +1,36 @@
+.journey {
+  @apply flex w-full;
+}
+.steps {
+  @apply flex flex-col justify-start items-center mr-3 relative;
+}
+.line {
+  @apply border h-full absolute border-secondary;
+}
+.step {
+  @apply mt-8 my-auto flex justify-center items-center w-8 h-8 rounded-full border-[#FFD4DC] border text-sm font-bold tracking-widest text-[#625858] leading-loose z-10 bg-white;
+}
+.step_current {
+  @apply bg-secondary text-white border-secondary;
+}
+.content {
+  @apply px-3 w-full;
+}
+.step_content {
+  @apply my-5 w-full lg:flex justify-between items-center;
+}
+.step_content:nth-child(2){
+  @apply lg:border-y py-10;
+}
+.content_wrap {
+  @apply flex flex-col justify-center;
+}
+.content_title {
+  @apply text-lg font-bold text-[#545454] tracking-wide;
+}
+.content_text {
+  @apply text-[#898989] font-semibold text-base tracking-wide mb-6 lg:mb-0 mt-1;
+}
+.content_btn {
+  @apply flex justify-start items-start h-full;
+}

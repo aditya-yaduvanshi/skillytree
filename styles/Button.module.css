@@ -8,3 +8,12 @@
 .btn_link span {
   @apply mx-3;
 }
+.btn_primary {
+  @apply text-white bg-secondary;
+}
+.btn_secondary {
+  @apply text-secondary bg-[#FFD4DC];
+}
+.btn {
+  @apply p-4 text-sm font-extrabold tracking-wider rounded-[8px];
+}

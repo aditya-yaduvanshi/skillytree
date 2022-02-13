@@ -1,23 +1,36 @@
 .sidebar {
   flex: 1;
-  @apply flex flex-col rounded-xl h-full bg-white items-center justify-start;
-  @apply p-6;
+  @apply w-full h-20 flex flex-col md:rounded-xl md:h-full bg-color-primary md:bg-white items-center justify-start;
+  @apply md:p-6 relative md:static px-5;
 }
 .sidebar_header {
-  @apply h-1/6 w-full text-center;
+  @apply w-full h-full md:h-1/6 flex items-center justify-between border-b md:border-0 px-5;
+  border-color: rgba(255, 184, 0, 0.27);
 }
 .sidebar_header_title {
-  @apply text-xl font-bold tracking-wide font-poppins;
+  @apply text-2xl md:text-xl text-center font-bold tracking-wide font-poppins;
   background: -webkit-linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.sidebar_menu_toggle {
+  @apply flex h-1/2 justify-center items-center md:hidden;
+}
+.sidebar_menu_icon {
+  @apply h-full text-[#4B4B4B];
+}
 .sidebar_links {
-  @apply flex flex-col items-baseline w-full;
+  @apply flex flex-col items-baseline w-full absolute right-0 md:static top-20 bg-white md:bg-transparent h-screen z-20;
+}
+.sidebar_links_show {
+  @apply flex px-10;
+}
+.sidebar_links_hide {
+  @apply hidden md:flex;
 }
 .sidebar_link {
   @apply w-full my-1 px-7 py-4 flex items-center justify-start;
-  @apply text-black font-roboto font-bold text-sm;
+  @apply text-black font-roboto font-bold md:text-sm text-2xl;
   @apply rounded-2xl transition-all duration-200 border border-transparent hover:border-secondary;
 }
 .sidebar_link_active {
@@ -27,8 +40,8 @@
   @apply text-white;
 }
 .sidebar_link_icon {
-  @apply h-4 mr-2;
+  @apply h-6 md:h-4 mr-2;
 }
 .sidebar_footer {
-  @apply justify-self-end;
+  @apply hidden md:flex;
 }

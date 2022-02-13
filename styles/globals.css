@@ -35,16 +35,11 @@ a {
 }
 
 .main {
-  @apply flex items-center justify-between flex-col md:flex-row;
+  @apply md:flex md:items-center md:justify-between md:flex-row;
   height: calc(100vh - 84px);
   @apply overflow-hidden;
 }
 .main_content {
   flex: 5;
   @apply h-full;
-}
-.text-primary {
-  background: -webkit-linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

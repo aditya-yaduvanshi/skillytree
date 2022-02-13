@@ -1,6 +1,9 @@
 .container {
-  @apply bg-color-primary;
+  @apply bg-color-primary p-2 overflow-y-auto pb-24;
 }
 .title {
-  @apply text-2xl font-semibold;
+  @apply text-3xl font-bold text-stone-600 font-poppins py-4 px-7 mb-5 tracking-wider;
+}
+.content {
+  @apply rounded-3xl bg-white p-6;
 }

@@ -32,6 +32,7 @@
   @apply w-full my-1 px-7 py-4 flex items-center justify-start;
   @apply text-black font-roboto font-bold md:text-sm text-2xl;
   @apply rounded-2xl transition-all duration-200 border border-transparent hover:border-secondary;
+  @apply md:flex-col lg:flex-row md:justify-center lg:justify-start;
 }
 .sidebar_link_active {
   @apply bg-secondary text-white;

@@ -1,5 +1,8 @@
 import {NavLink} from '.';
+import Image from 'next/image';
 import styles from '../styles/Sidebar.module.css';
+import Counsilor from '../public/img/counsilor.svg';
+import Support from '../public/img/support.svg';
 import {
 	BookmarkAltIcon,
 	BookOpenIcon,
@@ -7,26 +10,30 @@ import {
 	CogIcon,
 	ChatIcon,
 	LogoutIcon,
-	MenuIcon
+	MenuIcon,
 } from '@heroicons/react/outline';
-import { useState } from 'react';
+import {useState} from 'react';
 
 export function Sidebar() {
 	const [show, setShow] = useState(false);
 
-	function toggleMenu () {
-		setShow(prev => !prev);
+	function toggleMenu() {
+		setShow((prev) => !prev);
 	}
-	
+
 	return (
-		<nav className={styles.sidebar}>
+		<nav className={styles.sidebar} onBlur={() => setShow(false)}>
 			<div className={styles.sidebar_header}>
 				<h2 className={styles.sidebar_header_title}>Dashboard</h2>
 				<button className={styles.sidebar_menu_toggle} onClick={toggleMenu}>
 					<MenuIcon className={styles.sidebar_menu_icon} />
 				</button>
 			</div>
-			<div className={`${styles.sidebar_links} ${show ? styles.sidebar_links_show : styles.sidebar_links_hide}`}>
+			<div
+				className={`${styles.sidebar_links} ${
+					show ? styles.sidebar_links_show : styles.sidebar_links_hide
+				}`}
+			>
 				<NavLink
 					to="/dashboard"
 					className={styles.sidebar_link}
@@ -87,7 +94,19 @@ export function Sidebar() {
 				</NavLink>
 			</div>
 			<div className={styles.sidebar_footer}>
-				<h3>Chat With Councillor</h3>
+				<div className={styles.sidebar_footer_wrap}>
+					<div className={styles.sidebar_footer_img}>
+						<Image src={Counsilor} width={174} height={174} />
+					</div>
+					<h3 className={styles.sidebar_footer_title}>
+						<span className={styles.sidebar_footer_icon}>
+							<Image src={Support} width={20} height={20} />
+						</span>
+						<span className={styles.sidebar_footer_text}>
+							Chat With Councillor
+						</span>
+					</h3>
+				</div>
 			</div>
 		</nav>
 	);

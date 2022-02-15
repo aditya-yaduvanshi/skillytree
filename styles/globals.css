@@ -40,6 +40,6 @@ a {
   @apply overflow-hidden;
 }
 .main_content {
-  flex: 5;
-  @apply h-full;
+  flex: 4;
+  @apply h-full bg-color-primary;
 }

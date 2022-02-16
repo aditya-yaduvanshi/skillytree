@@ -1,0 +1,9 @@
+.avatar {
+  @apply flex justify-between items-center;
+}
+.avatar_icon {
+  @apply h-full text-[#4B4B4B] mr-2;
+}
+.avatar_name {
+  @apply text-xl font-bold font-poppins;
+}

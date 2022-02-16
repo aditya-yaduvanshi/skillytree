@@ -1,5 +1,5 @@
 .container {
-  @apply bg-color-primary p-2 overflow-y-auto pb-24;
+  @apply bg-color-primary p-2 overflow-y-auto pb-52;
 }
 .title {
   @apply text-3xl font-bold text-stone-600 font-poppins py-4 px-7 mb-5 tracking-wider;

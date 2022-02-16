@@ -1,8 +1,9 @@
-import {NavLink} from '.';
+import {Avatar, NavLink} from '.';
 import Image from 'next/image';
 import styles from '../styles/Sidebar.module.css';
 import Counsilor from '../public/img/counsilor.svg';
 import Support from '../public/img/support.svg';
+
 import {
 	BookmarkAltIcon,
 	BookOpenIcon,
@@ -10,29 +11,17 @@ import {
 	CogIcon,
 	ChatIcon,
 	LogoutIcon,
-	MenuIcon,
 } from '@heroicons/react/outline';
-import {useState} from 'react';
 
 export function Sidebar() {
-	const [show, setShow] = useState(false);
-
-	function toggleMenu() {
-		setShow((prev) => !prev);
-	}
-
 	return (
-		<nav className={styles.sidebar} onBlur={() => setShow(false)}>
+		<nav className={styles.sidebar}>
 			<div className={styles.sidebar_header}>
 				<h2 className={styles.sidebar_header_title}>Dashboard</h2>
-				<button className={styles.sidebar_menu_toggle} onClick={toggleMenu}>
-					<MenuIcon className={styles.sidebar_menu_icon} />
-				</button>
+				<Avatar className={styles.sidebar_avatar} />
 			</div>
 			<div
-				className={`${styles.sidebar_links} ${
-					show ? styles.sidebar_links_show : styles.sidebar_links_hide
-				}`}
+				className={styles.sidebar_links}
 			>
 				<NavLink
 					to="/dashboard"
@@ -41,7 +30,7 @@ export function Sidebar() {
 					key="dashboard"
 				>
 					<HomeIcon className={styles.sidebar_link_icon} />
-					<span>Home</span>
+					<span className={styles.sidebar_link_text}>Home</span>
 				</NavLink>
 
 				<NavLink
@@ -50,7 +39,7 @@ export function Sidebar() {
 					activeClass={styles.sidebar_link_active}
 				>
 					<BookmarkAltIcon className={styles.sidebar_link_icon} />
-					<span>Certificates</span>
+					<span className={styles.sidebar_link_text}>Certificates</span>
 				</NavLink>
 
 				<NavLink
@@ -60,7 +49,7 @@ export function Sidebar() {
 					key="my-lessons"
 				>
 					<BookOpenIcon className={styles.sidebar_link_icon} />
-					<span>My Lessons</span>
+					<span className={styles.sidebar_link_text}>My Lessons</span>
 				</NavLink>
 
 				<NavLink
@@ -70,7 +59,7 @@ export function Sidebar() {
 					key="messages"
 				>
 					<ChatIcon className={styles.sidebar_link_icon} />
-					<span>Messages</span>
+					<span className={styles.sidebar_link_text}>Messages</span>
 				</NavLink>
 
 				<NavLink
@@ -80,17 +69,17 @@ export function Sidebar() {
 					key="settings"
 				>
 					<CogIcon className={styles.sidebar_link_icon} />
-					<span>Settings</span>
+					<span className={styles.sidebar_link_text}>Settings</span>
 				</NavLink>
 
 				<NavLink
 					to="#!"
-					className={styles.sidebar_link}
+					className={`${styles.sidebar_link} ${styles.sidebar_link_logout}`}
 					activeClass={styles.sidebar_link_active}
 					key="logout"
 				>
 					<LogoutIcon className={styles.sidebar_link_icon} />
-					<span>Log Out</span>
+					<span className={styles.sidebar_link_text}>Log Out</span>
 				</NavLink>
 			</div>
 			<div className={styles.sidebar_footer}>

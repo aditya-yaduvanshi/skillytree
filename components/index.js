@@ -7,3 +7,4 @@ export * from './StepSection';
 export * from './Sidebar';
 export * from './NavLink';
 export * from './Journey';
+export * from './Avatar';

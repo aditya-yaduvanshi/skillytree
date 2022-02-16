@@ -37,7 +37,7 @@ a {
 .main {
   @apply md:flex md:items-center md:justify-between md:flex-row;
   height: calc(100vh - 84px);
-  @apply overflow-hidden;
+  @apply overflow-hidden relative;
 }
 .main_content {
   flex: 4;

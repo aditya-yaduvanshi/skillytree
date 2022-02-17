@@ -8,3 +8,4 @@ export * from './Sidebar';
 export * from './NavLink';
 export * from './Journey';
 export * from './Avatar';
+export * from './TutorSession';

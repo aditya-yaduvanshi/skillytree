@@ -5,5 +5,5 @@
   @apply text-3xl font-bold text-stone-600 font-poppins py-4 px-7 mb-5 tracking-wider;
 }
 .content {
-  @apply rounded-3xl bg-white p-6;
+  @apply rounded-3xl bg-white p-6 mb-5 font-poppins;
 }

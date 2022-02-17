@@ -1,0 +1,53 @@
+.tutor_session {
+  @apply flex flex-col justify-start;
+}
+.tutor_btns, 
+.tutor, 
+.tutor_schedule {
+  @apply flex lg:justify-between items-center lg:w-auto w-full;
+}
+.tutor_session_header, .tutor_session_main, .tutor_session_footer {
+  @apply flex flex-col justify-between py-2 lg:flex-row px-4;
+}
+.tutor_avatar {
+  @apply gap-3;
+}
+.tutor_avatar span {
+  @apply text-2xl;
+}
+.down_icon {
+  @apply mr-3 h-7 text-[#9A9A9A];
+}
+.tutor_schedule {
+  @apply justify-between my-6 lg:my-0;
+}
+.tutor_schedule_text {
+  @apply flex lg:flex-col justify-between items-center;
+}
+.text_normal {
+  @apply mr-5 text-lg font-semibold;
+}
+.text_light {
+  @apply text-[#858585] text-sm;
+}
+.tutor_btns_btn {
+  @apply p-3 rounded-xl mr-2.5;
+}
+.tutor_session_main {
+  @apply border-y py-5 my-5;
+}
+.tutor_session_footer p {
+  @apply text-base mb-5 lg:mb-0; 
+}
+.tutor_session_footer_confirm {
+  @apply flex justify-between items-center;
+}
+.div_title, .tutor_session_confirm {
+  @apply text-lg tracking-widest text-[#666666] font-poppins font-semibold lg:mr-5;
+}
+.tutor_session_repeat_icon {
+  @apply mr-2 mt-1;
+}
+.tutor_session_repeat {
+  @apply flex items-center justify-between text-base text-secondary font-bold;
+}

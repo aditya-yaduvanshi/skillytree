@@ -7,7 +7,7 @@ export function Avatar({className}) {
 	return (
 		<NavLink to="#!" className={`${styles.avatar} ${className}`}>
 			<span className={styles.avatar_icon}>
-				<Image src={AvatarIcon} width={37} height={32} />
+				<Image src={AvatarIcon} width={37} height={32} alt="avatar" />
 			</span>
 			<span className={styles.avatar_name}>Aditya</span>
 		</NavLink>

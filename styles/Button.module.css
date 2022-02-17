@@ -14,6 +14,15 @@
 .btn_secondary {
   @apply text-secondary bg-[#FFD4DC];
 }
+.btn_tertiary {
+  @apply text-secondary border border-secondary;
+}
 .btn {
-  @apply p-4 text-sm font-extrabold tracking-wider rounded-[8px];
+  @apply p-4 font-extrabold tracking-wider rounded-[8px];
+}
+.btn_text_sm {
+  @apply text-sm;
+}
+.btn_text_lg {
+  @apply text-lg;
 }

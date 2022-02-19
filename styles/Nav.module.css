@@ -28,7 +28,10 @@
   @apply hidden;
 }
 .nav_search_icon {
-  @apply absolute left-3 top-2;
+  @apply absolute left-3 top-2 h-full;
+}
+.nav_search_icon_btn {
+  @apply flex;
 }
 .nav_search_icon_img {
   @apply text-[#C8C8C8];
@@ -61,6 +64,10 @@
 }
 .nav_menu_btn {
   @apply flex justify-center items-center;
+}
+.nav_menu_btn img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .nav_menu_btn_hide {
   @apply lg:hidden;

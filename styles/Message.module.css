@@ -1,0 +1,27 @@
+.message {
+  @apply flex my-1 gap-x-2.5 items-end;
+}
+.message_my {
+  @apply flex-row-reverse;
+}
+.avatar {
+  @apply invisible;
+}
+.avatar_last {
+  @apply visible;
+}
+.text {
+  @apply inline bg-[#F9F9F9] rounded-md p-4 pr-12 relative font-roboto max-w-[70%];
+}
+.text_my {
+  @apply bg-[#FFE5EA];
+}
+.text_para {
+  @apply text-[#404040] text-base tracking-wider font-medium;
+}
+.text_para_my {
+  @apply text-[#686868];
+}
+.text_time {
+  @apply absolute right-4 bottom-1 text-sm text-[#686868];
+}

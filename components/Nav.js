@@ -28,7 +28,7 @@ export function Nav() {
 					placeholder="SEARCH A SKILL"
 				/>
 				<span
-					className={`${searchShow ? styles.nav_search_icon : ''}`}
+					className={`${searchShow ? styles.nav_search_icon : styles.nav_search_icon_btn}`}
 					onClick={searchShow ? null : () => setSearchShow(true)}
 				>
 					<Image

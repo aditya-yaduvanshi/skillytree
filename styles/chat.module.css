@@ -1,0 +1,36 @@
+.chat_container {
+  @apply relative bg-white overflow-hidden lg:bg-transparent h-full;
+}
+.header {
+  @apply flex justify-start items-center border-b py-0.5 gap-x-1;
+}
+.back_btn {
+  @apply text-[#9A9A9A];
+}
+.avatar {
+  @apply text-[#797979] font-roboto tracking-widest gap-2;
+}
+.chat {
+  @apply overflow-y-auto h-4/5 md:h-[121%] md:bg-transparent;
+}
+.date {
+  @apply flex justify-center items-center w-full mt-6 mb-10;
+}
+.date_text {
+  @apply rounded-3xl bg-[#F3F3F3] py-1 px-3 text-[#B4B4B4] text-sm;
+}
+.footer {
+  @apply absolute bottom-40 md:bottom-0 h-20 right-0 left-0 px-5 border-t-2 flex items-center bg-white;
+}
+.footer button {
+  @apply mx-5;
+}
+.input_message {
+  @apply w-full h-full text-xl py-5 resize-none font-roboto text-[#404040] outline-none;
+}
+.emoji {
+  @apply text-[#7B7B7B];
+}
+.send_message {
+  @apply my-auto flex items-center justify-center p-0;
+}

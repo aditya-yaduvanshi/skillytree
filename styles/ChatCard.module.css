@@ -1,0 +1,18 @@
+.link {
+  @apply flex w-full py-1 px-4 bg-white border-b items-center hover:bg-slate-100;
+}
+.avatar {
+  @apply flex;
+}
+.body {
+  @apply relative w-full p-3;
+}
+.title {
+  @apply mb-1 text-base text-[#797979] font-bold;
+}
+.date {
+  @apply absolute right-0 top-3 text-[#9A9A9A] md:text-xs;
+}
+.text {
+  @apply text-sm text-[#9A9A9A];
+}

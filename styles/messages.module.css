@@ -1,0 +1,22 @@
+.container {
+  @apply bg-white lg:bg-color-primary font-roboto;
+  @apply lg:flex h-full pb-0 overflow-hidden;
+}
+.chat_profiles {
+  @apply flex-[2] lg:border-r lg:border-primary h-full pb-14;
+}
+.chat_container {
+  @apply flex-[3] hidden lg:block h-full overflow-hidden;
+}
+.header_links {
+  @apply flex items-center border-b border-primary;
+}
+.header_link {
+  @apply text-xl font-roboto border-b-2 border-transparent px-5 py-2.5 font-bold mx-3 transition-all duration-200 ease-in-out text-[#9A9A9A];
+}
+.header_link_active {
+  @apply border-secondary text-secondary;
+}
+.chats {
+  @apply overflow-y-auto h-full pt-0.5;
+}

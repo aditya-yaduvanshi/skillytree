@@ -10,7 +10,7 @@ export function Message({type = 'my', last}) {
 			</div>
 			<div className={`${styles.text}${type === 'my' ? ' ' + styles.text_my : ''}`}>
 				<p className={`${styles.text_para}${type === 'my' ? ' ' + styles.text_para_my : ''}`}>
-					Hey Yashvi, That's great! would you like my help with this? do you
+					Hey Yashvi, That&apos;s great! would you like my help with this? do you
 					have any questions for me about how I conduct my lessons?
 				</p>
 				<span className={styles.text_time}>12:00</span>

@@ -85,11 +85,11 @@ export function Sidebar() {
 			<div className={styles.sidebar_footer}>
 				<div className={styles.sidebar_footer_wrap}>
 					<div className={styles.sidebar_footer_img}>
-						<Image src={Counsilor} width={174} height={174} />
+						<Image src={Counsilor} width={174} height={174} alt="" />
 					</div>
 					<h3 className={styles.sidebar_footer_title}>
 						<span className={styles.sidebar_footer_icon}>
-							<Image src={Support} width={20} height={20} />
+							<Image src={Support} width={20} height={20} alt="" />
 						</span>
 						<span className={styles.sidebar_footer_text}>
 							Chat With Councillor

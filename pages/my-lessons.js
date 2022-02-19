@@ -21,11 +21,11 @@ function MyLessons({className}) {
 			<div className={styles.content}>
 				<div className="flex">
 					<div className="mr-5 mt-4 lg:mt-2">
-						<Image src={Check} width={23} height={23} />
+						<Image src={Check} width={23} height={23} alt="" />
 					</div>
 					<div className="lg:flex justify-between items-center">
 						<h3 className="text-lg tracking-widest text-[#666666] font-poppins font-semibold mb-4 lg:mb-0 lg:mr-5">
-							Get A Free Tutor Replacement If You Don’t Like Your Trial Lesson
+							Get A Free Tutor Replacement If You Don&apos;t Like Your Trial Lesson
 						</h3>
 						<Link href="#!">
 							<a className="text-secondary font-extrabold text-lg lg:text-base"><pre className="font-poppins font-extrabold">How To Get A Replacement</pre></a>
@@ -37,7 +37,7 @@ function MyLessons({className}) {
         <h2 className={styles.title} style={{marginBottom: '0'}}>My Lessons</h2>
         <button className="flex items-center justify-between text-base text-secondary font-bold mr-5">
           <span className='mr-2 mt-1'>
-            <Image src={Repeat} width={16} height={16} />
+            <Image src={Repeat} width={16} height={16} alt="" />
           </span>
           <span>Transfer Credit</span>
         </button>

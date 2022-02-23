@@ -11,3 +11,4 @@ export * from './Avatar';
 export * from './TutorSession';
 export * from './ChatCard';
 export * from './Message';
+export * from './Certificate';

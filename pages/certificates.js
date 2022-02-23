@@ -1,12 +1,29 @@
-import styles from '../styles/dashboard.module.css';
+import { Certificate } from '../components';
+import styles from '../styles/certificates.module.css';
 
-function Certificates ({className}) {
+function CertificateList ({className}) {
   return (
-    <section className={`${styles.container} ${className}`}>
-      <h1 className={styles.title}>Certificates</h1>
-      <div className={styles.content}>Certificate</div>
+    <section className={`my_container ${className}`}>
+      <h2 className='title'>Certificates</h2>
+      <div className={styles.container}>
+        <div className={`${styles.content} content`}>
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+          <Certificate className={styles.certificate} />
+        </div>
+        <div className={styles.sessions}>
+
+        </div>
+      </div>
     </section>
   )
 }
 
-export default Certificates;
+export default CertificateList;

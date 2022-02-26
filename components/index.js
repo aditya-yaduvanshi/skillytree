@@ -12,3 +12,5 @@ export * from './TutorSession';
 export * from './ChatCard';
 export * from './Message';
 export * from './Certificate';
+export * from './Card';
+export * from './CourseSkill';

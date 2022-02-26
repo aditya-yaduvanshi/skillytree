@@ -1,0 +1,18 @@
+.course_skill {
+  @apply flex w-full justify-between flex-col;
+}
+.row {
+  @apply flex justify-between items-center;
+}
+.step_content {
+  @apply flex;
+}
+.steps_line {
+  @apply flex justify-around;
+}
+.down_icon {
+  @apply h-5;
+}
+.btn_info {
+  
+}

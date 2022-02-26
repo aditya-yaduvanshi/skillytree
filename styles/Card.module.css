@@ -1,0 +1,8 @@
+.card {
+}
+.title {
+  @apply text-7xl mt-6 mb-2;
+}
+.text {
+  @apply text-sm;
+}

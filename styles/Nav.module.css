@@ -31,7 +31,7 @@
   @apply absolute left-3 top-2 h-full;
 }
 .nav_search_icon_btn {
-  @apply flex;
+  @apply flex cursor-pointer;
 }
 .nav_search_icon_img {
   @apply text-[#C8C8C8];

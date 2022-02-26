@@ -16,7 +16,7 @@
   @apply pl-12 relative;
 }
 .section_title {
-  @apply text-7xl font-bold;
+  @apply text-5xl font-bold;
 }
 .section_title_highlight {
   @apply text-red-500;

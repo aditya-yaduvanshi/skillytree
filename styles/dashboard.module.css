@@ -7,3 +7,12 @@
 .content {
   @apply rounded-3xl bg-white p-6 mb-5 font-poppins;
 }
+.row_contents {
+  @apply flex justify-between;
+}
+.content_row_title {
+  @apply font-poppins my-3 px-4 text-2xl font-semibold tracking-wider;
+}
+.row_grid {
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-2;
+}

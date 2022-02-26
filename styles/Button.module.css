@@ -26,3 +26,12 @@
 .btn_text_lg {
   @apply text-lg;
 }
+.btn_info {
+  @apply text-[#C00CFF] border-transparent rounded-xl border bg-[#EAD0FF] py-2.5 px-5 w-1/6;
+}
+.btn_success {
+  @apply text-[#0F830C] border-transparent rounded-xl border bg-[#D9FFD0] py-2.5 px-5 w-1/6;
+}
+.btn_warning {
+  @apply text-[#E43C26] border-transparent rounded-xl border bg-[#FFE9D0] py-2.5 px-5 w-1/6;
+}

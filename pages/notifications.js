@@ -1,6 +1,6 @@
 import styles from '../styles/dashboard.module.css';
 
-function Notifications () {
+function Notifications ({className}) {
   return (
     <section className={`${styles.container} ${className}`}>
       <h1 className={styles.title}>Settings</h1>

@@ -1,6 +1,6 @@
 import styles from '../styles/dashboard.module.css';
 
-function Achievements () {
+function Achievements ({className}) {
   return (
     <section className={`${styles.container} ${className}`}>
       <h1 className={styles.title}>Settings</h1>
